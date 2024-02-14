@@ -3,7 +3,7 @@ document.querySelector('button').addEventListener('click', apiRequest)
 async function apiRequest(){
     const pokeStarter = document.querySelector('input').value
     try{
-        const response = await fetch(`https://rap-names-api-practice2.vercel.app/api/${pokeStarter}`)
+        const response = await fetch(`https://poke-api-backend.vercel.app/api/${pokeStarter}`)
         const data = await response.json()
 
         console.log(data)
